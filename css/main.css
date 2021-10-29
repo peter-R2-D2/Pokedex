@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  align-items: center;
+  justify-items: center;
+}
+.navbar_img-content {
+  grid-column: 2;
+}
+.navbar_like {
+  grid-column: 3;
+  justify-self: end;
+}
+.navbar_img {
+  width: 159.69px;
+  height: 64px;
+}
+.navbar_icon {
+  font-size: 40.5px;
+  color: red;
+}
+.search {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_input {
+  width: 300px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.search_input:focus {
+  outline: none;
+}
+.search_btn {
+  margin-left: 50px;
+  width: 60px;
+  height: 54px;
+  border-radius: 100%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+.search_icon {
+  font-size: 24px;
+}
+
+/* Pagination */
+.pokedex {
+  margin: 30px 30px;
+}
+.pokedex_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pokedex_title {
+  font-size: 54px;
+  font-weight: 700;
+}
+.pokedex_pagination {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.pokedex_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 100%;
+}

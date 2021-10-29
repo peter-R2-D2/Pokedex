@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="navbar">
+        <div class="navbar_img-content">
+          <img src="img/pokelogo.png" alt="pokelogo" class="navbar_img" />
+        </div>
+        <div class="navbar_like">
+          <ion-icon name="heart-outline" class="navbar_icon"></ion-icon>
+        </div>
+      </div>
+      <div class="search">
+        <input
+          type="search"
+          class="search_input"
+          id="input"
+          placeholder="Buscar Pokemon..."
+        />
+        <button type="submit" class="search_btn" id="btn">
+          <ion-icon name="search-outline" class="search_icon"></ion-icon>
+        </button>
+      </div>
+
+      <div class="pokedex">
+        <div class="pokedex_content">
+          <h3 class="pokedex_title">Pokedex</h3>
+          <div class="pokedex_pagination">
+            <ion-icon
+              name="chevron-back-outline"
+              class="pokedex_icon"
+            ></ion-icon>
+            <ion-icon
+              name="chevron-forward-outline"
+              class="pokedex_icon"
+            ></ion-icon>
+          </div>
+        </div>
+
+        <div class="pokedex_container" id="poke_container"></div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
