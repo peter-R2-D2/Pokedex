@@ -94,6 +94,12 @@ img {
   border-radius: 100%;
 }
 /* Card Pokemon */
+.pokedex_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  justify-items: center;
+  row-gap: 50px;
+}
 .card {
   width: 320px;
   height: 80px;

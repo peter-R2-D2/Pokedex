@@ -1,4 +1,4 @@
-import { searchPokemon } from "./js/api";
+import { searchPokemon, getPokemons } from "./js/api";
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -13,8 +13,12 @@ input.addEventListener("change", onChange);
 
 // Escuchar el input
 function onChange(event) {
-  let idPokemon = event.target.value;
-  searchPokemon(idPokemon);
+  if (event.target.value === "") {
+    console.log("No has escrito nada en el input");
+  } else {
+    let idPokemon = event.target.value;
+    searchPokemon(idPokemon);
+  }
 }
 
 // Crear card pokemon
