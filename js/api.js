@@ -1,4 +1,3 @@
-import "css/main.css";
 import { pokeCard } from "../main";
 
 // Obtener pokemon API
